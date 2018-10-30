@@ -1,8 +1,15 @@
-body{
-    padding: 0;
-     margin: 0;
+body {
+    margin: 0;
+    background-color: #dbdcdb;
 }
-#slideshow_container{
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#slideshow_container {
     position: relative;
     height: calc(100vh - 150px);
 
@@ -12,23 +19,23 @@ body{
 }
 
 
-.slider{
-  
+.slider {
+
     width: 400%;
     height: 100%;
-/*
+    /*
     transition-property: all;
     transition-duration: 0.4s;
 */
 }
 
-.slides{
+.slides {
     position: relative;
     display: inline-block;
     float: left;
     width: 25%;
     height: 100%;
-   
+
 
 }
 
@@ -37,38 +44,48 @@ body{
     clear: both;
 }
 
-img{
-width: 100%;
-height: 100%;
-    
+img {
+    width: 100%;
+    height: 100%;
+
 }
 
-.btn{
+.btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin: 0 10px;
 }
 
-.right{
-    
+.right {
+
     right: 0;
-    
+
 }
 
-.left{
-    left:0;
-    
+.left {
+    left: 0;
+
 }
 
-.tytul{
+.tytul {
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     margin: auto;
     transform: translateY(-50%, -50%);
-    color: aliceblue;
+    color: #dbdcdb;
     margin: 0;
     padding: 0;
-} 
+}
 
+.btn {
+    background-color: rgba(0, 0, 0, .1);
+    border: 0;
+    cursor: pointer;
+}
+
+.btns i {
+    font-size: 60px;
+    color: #dbdcdb;
+}
